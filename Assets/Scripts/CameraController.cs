@@ -1,11 +1,12 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float smoothTime;
     
+    
+    [SerializeField] private float smoothTime;
+
     private Vector3 _offset;
     private Transform target;
     private Vector3 _currentVelocity = Vector3.zero;
@@ -32,10 +33,7 @@ public class CameraController : MonoBehaviour
                 target = _hounter.transform;
                 break;
         }
-    }
 
-    private void Awake()
-    {
         _offset = transform.position - target.position;
     }
 

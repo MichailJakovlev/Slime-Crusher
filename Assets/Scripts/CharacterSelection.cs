@@ -11,7 +11,6 @@ public class CharacterSelection : MonoBehaviour
 
   private void Awake()
   {
-    SelectCharacter(0); // Start with the first character
   }
     private void SelectCharacter(int _index)
     {
