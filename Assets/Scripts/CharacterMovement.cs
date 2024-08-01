@@ -15,7 +15,7 @@ public class CharacterMovement : MonoBehaviour
 
     public float _moveSpeed = 6f;
     public float _turnSmoothTime = 0.1f;
-    
+
     float _turnSmoothVelocity;
     bool isAttack = false;
 
