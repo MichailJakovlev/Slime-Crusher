@@ -6,8 +6,6 @@ public class SlimesMovement : MonoBehaviour
     public NavMeshAgent _agent;
     public GameObject _target;
     
-    public float _moveSpeed;
-
     private void Start()
     {
         _target = GameObject.FindWithTag("Player");
