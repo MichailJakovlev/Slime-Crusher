@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-
     public GameObject _warrior;
     public GameObject _shooter;
     public GameObject _wizard;
     public GameObject _hounter;
 
-    void Start()
+    public void Start()
     {
-        switch(PlayerPrefs.GetString("PlayableCharacter"))
+        switch (PlayerPrefs.GetString("PlayableCharacter"))
         {
             case "Warrior":
                 _warrior.SetActive(true);

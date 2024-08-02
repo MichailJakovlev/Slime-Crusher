@@ -1,14 +1,11 @@
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class CameraController : MonoBehaviour
 {
-    
-    
     [SerializeField] private float smoothTime;
 
-    private Vector3 _offset;
     private Transform target;
+    private Vector3 _offset;
     private Vector3 _currentVelocity = Vector3.zero;
 
     public GameObject _warrior;
