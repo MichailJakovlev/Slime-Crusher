@@ -21,4 +21,11 @@ public class SpawnSlimes : MonoBehaviour
             Instantiate(_slimePrefab, _spawnPoints[spawn].transform.position, Quaternion.identity);
         }
     }
+
+    public void SpawnOnce()
+    {
+        var spawn = UnityEngine.Random.Range(0, _spawnPoints.Count);
+        Instantiate(_slimePrefab, _spawnPoints[spawn].transform.position, Quaternion.identity);
+    }
+
 }
