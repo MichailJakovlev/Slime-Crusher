@@ -8,13 +8,12 @@ public class CharacterController : MonoBehaviour
 {
     public CharacterMovement characterMovement;
     public HealthBar characterHealth;
+    public UIController uiController;
     [SerializeField] public int maxHealth;
     [SerializeField] public int damageTaken;
     [SerializeField] public int healTaken;
     [SerializeField] public float moveSpeed;
-
-    int currentHealth;
-
+    public int currentHealth;
 
     public void HealCharacter(int healAmount)
     {
@@ -50,14 +49,17 @@ public class CharacterController : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (!uiController.pauseMenu.isActiveAndEnabled && !uiController.gameOverMenu.isActiveAndEnabled)
         {
-            HealCharacter(healTaken);
-        }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                HealCharacter(healTaken);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            HitCharacter(damageTaken);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                HitCharacter(damageTaken);
+            }
         }
     }
 }
