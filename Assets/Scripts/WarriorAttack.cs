@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WarriorAttack : MonoBehaviour
@@ -9,12 +8,10 @@ public class WarriorAttack : MonoBehaviour
     public Animator _characterAnim;
     public float attackTime;
 
-
     public void Start()
     {
         var _spawn = GetComponent<SpawnSlimes>();
         var _moveScript = GetComponent<CharacterMovement>(); 
-        
     }
 
     public void OnTriggerStay(Collider other)
