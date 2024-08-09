@@ -13,12 +13,12 @@ public class WarriorAttack : MonoBehaviour
     public void Start()
     {
         var _spawn = GetComponent<SpawnSlimes>();
-        var _moveScript = GetComponent<CharacterMovement>(); 
-        
+        var _moveScript = GetComponent<CharacterMovement>();
+
     }
 
     public void OnTriggerStay(Collider other)
-    {      
+    {
         if (other.gameObject.tag == "Slime")
         {
             if(Input.GetMouseButton(0))
