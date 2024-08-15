@@ -3,16 +3,17 @@ using UnityEngine;
 
 public class WarriorAttack : MonoBehaviour
 {
-    public SpawnSlimes _spawn;
+    
+    public SlimeController _slimeController;
     public CharacterMovement _moveScript;
     public Animator _characterAnim;
+
     public float attackTime;
+    public int _damageValue;
 
     public void Start()
     {
-        var _spawn = GetComponent<SpawnSlimes>();
         var _moveScript = GetComponent<CharacterMovement>();
-
     }
 
     public void OnTriggerStay(Collider other)
@@ -22,8 +23,7 @@ public class WarriorAttack : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 StartCoroutine(Attack());
-                _spawn.SpawnOnce();
-                Destroy(other.gameObject);
+                _slimeController.HitSlime(_damageValue, other);
             }
         }
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SlimeAttack : MonoBehaviour
@@ -7,6 +5,7 @@ public class SlimeAttack : MonoBehaviour
     public CharacterController _characterController;
     public SlimeInfo _slimeInfo;
     public GameObject _target;
+   
     float cooldown = 0f;
 
     private void Start()

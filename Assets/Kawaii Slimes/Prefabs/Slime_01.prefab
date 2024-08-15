@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: -1510139902121336053}
   - component: {fileID: 3519841185722757737}
   - component: {fileID: -6678711245428327206}
+  - component: {fileID: 1364153586789344723}
   - component: {fileID: -8965824172924081623}
   - component: {fileID: -1093021989172710487}
   m_Layer: 0
@@ -269,6 +270,7 @@ MonoBehaviour:
   _agent: {fileID: 3519841185722757737}
   _target: {fileID: 0}
   _anim: {fileID: -6678711245428327206}
+  isAttack: 0
 --- !u!195 &3519841185722757737
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -312,6 +314,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1364153586789344723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705402075998324148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6926e78d40f03c644aa4f3ec354daa2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slimeInfo: {fileID: 11400000, guid: f1863be1db6e8e244a79771cd6790914, type: 2}
+  _spawn: {fileID: 6481709630265889548, guid: 9adfc6dfea0f53244b675e5168104ba3, type: 3}
+  _score: 0
+  _currentHealth: 0
 --- !u!135 &-8965824172924081623
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -348,7 +366,6 @@ MonoBehaviour:
   _characterController: {fileID: 0}
   _slimeInfo: {fileID: 11400000, guid: f1863be1db6e8e244a79771cd6790914, type: 2}
   _target: {fileID: 0}
-  damage: 5
 --- !u!1 &7534262480104691789
 GameObject:
   m_ObjectHideFlags: 0

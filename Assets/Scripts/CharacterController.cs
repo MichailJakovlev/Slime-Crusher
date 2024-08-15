@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
@@ -9,11 +6,16 @@ public class CharacterController : MonoBehaviour
     public CharacterMovement characterMovement;
     public HealthBar characterHealth;
     public UIController uiController;
+    public CharacterMovement _moveScript;
+    public Animator _characterAnim;
+
     [SerializeField] public int maxHealth;
     [SerializeField] public int damageTaken;
     [SerializeField] public int healTaken;
     [SerializeField] public float moveSpeed;
+
     public int currentHealth;
+    public float attackTime;
 
     public void HealCharacter(int healAmount)
     {
@@ -39,6 +41,7 @@ public class CharacterController : MonoBehaviour
             currentHealth = currentHealth - hitAmount;
         }
         characterHealth.SetHealthBar(currentHealth, maxHealth);
+        StartCoroutine(Attack());
     }
 
     void Awake()
@@ -61,5 +64,19 @@ public class CharacterController : MonoBehaviour
                 HitCharacter(damageTaken);
             }
         }
+    }
+
+    IEnumerator Attack()
+    {
+        float startTime = Time.time;
+        _moveScript.isAttack = true;
+
+        while (Time.time < startTime + attackTime)
+        {
+            _characterAnim.Play("GetHit");
+
+            yield return null;
+        }
+        _moveScript.isAttack = false;
     }
 }
