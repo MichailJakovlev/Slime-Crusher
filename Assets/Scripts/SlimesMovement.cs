@@ -17,9 +17,6 @@ public class SlimesMovement : MonoBehaviour
     {
         _agent.SetDestination(_target.transform.position);
 
-        if(isAttack == false)
-        {
-            _anim.Play("Walk");
-        }
+        
     }
 }

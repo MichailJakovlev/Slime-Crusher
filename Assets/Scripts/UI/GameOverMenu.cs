@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverMenu : MonoBehaviour
 {
     public UIController uiController;
     public GameObject gameOverMenu;
-    public List<CharacterController> characterController;
+    public CharacterHealth _characterHelth;
     public Button ExitButton;
     public Button RetryButton;
 
@@ -23,20 +20,13 @@ public class GameOverMenu : MonoBehaviour
     public int record = 963;
 
     public void SetGameOver()
-    {
-        foreach (var character in characterController)
+    {      
+        if (_characterHelth._currentHealth <= 0)
         {
-            if (character.isActiveAndEnabled)
-            {
-                if (character.currentHealth <= 0)
-                {
-                    RecordHandler();
-                    gameOverMenu.SetActive(true);
-                    Time.timeScale = 0;
-                }
-                break;
-            }
-        }
+            RecordHandler();
+            gameOverMenu.SetActive(true);
+            Time.timeScale = 0;
+        }   
     }
 
     void RecordHandler()

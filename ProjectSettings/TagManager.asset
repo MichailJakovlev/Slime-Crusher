@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Slime
+  - CharacterManager
+  - PlayerAnimLayer
+  - SpawnSlimes
   layers:
   - Default
   - TransparentFX
