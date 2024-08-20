@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 3519841185722757737}
   - component: {fileID: -6678711245428327206}
   - component: {fileID: -8965824172924081623}
-  - component: {fileID: -1093021989172710487}
+  - component: {fileID: 6741355579416346688}
   m_Layer: 0
   m_Name: Slime_01
   m_TagString: Slime
@@ -269,6 +269,7 @@ MonoBehaviour:
   _agent: {fileID: 3519841185722757737}
   _target: {fileID: 0}
   _anim: {fileID: -6678711245428327206}
+  isAttack: 0
 --- !u!195 &3519841185722757737
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &-1093021989172710487
+--- !u!114 &6741355579416346688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,13 +343,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6705402075998324148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eadd8d89f6d7d14081780a22e0181fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1990cfffb2bcb6c43a05926bcd06d66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterController: {fileID: 0}
-  _slimeInfo: {fileID: 11400000, guid: f1863be1db6e8e244a79771cd6790914, type: 2}
-  _target: {fileID: 0}
-  damage: 5
+  _damageValue: 5
+  _slimeHealth: 10
+  _animationTime: 0.5
+  _cooldownTime: 2
+  _slimeAnim: {fileID: -6678711245428327206}
+  _moveScript: {fileID: -1510139902121336053}
+  _characterHealth: {fileID: 0}
+  _spawnSlimes: {fileID: 0}
+  _currentHealth: 0
+  _cooldown: 0
+  _isDamageTaking: 0
 --- !u!1 &7534262480104691789
 GameObject:
   m_ObjectHideFlags: 0

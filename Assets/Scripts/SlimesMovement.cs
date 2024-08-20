@@ -6,6 +6,7 @@ public class SlimesMovement : MonoBehaviour
     public NavMeshAgent _agent;
     public GameObject _target;
     public Animator _anim;
+    public bool isAttack = false;
     
     private void Start()
     {
@@ -15,6 +16,7 @@ public class SlimesMovement : MonoBehaviour
     void LateUpdate()
     {
         _agent.SetDestination(_target.transform.position);
-        _anim.Play("Walk");
+
+        
     }
 }

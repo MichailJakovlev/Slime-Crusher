@@ -1,57 +1,80 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnSlimes : MonoBehaviour
 {
     public List<Transform> _spawnPoints;
-    public GameObject _slimePrefab;
+    public List<GameObject> _slimesTypes;
+    public TextMeshProUGUI _scoreText;
+
+    private int _slimesTypesLimit = 1;
     private int _slimesLimit = 20;
-    public int _score;
+
+    public int _score = 0;
 
     void Start()
     {
+        _slimesTypes = new List<GameObject>(_slimesTypes);
         _spawnPoints = new List<Transform>(_spawnPoints);
-        SpawnLimits();
-        Spawn();
+
+        SpawnByLimit(0,_slimesLimit);
     }
 
-    public void SpawnLimits()
+    public void SpawnByLimit(int _startSpawningValue, int limit)
     {
-        if (_score >= 100)
+        for (int i = _startSpawningValue; i < limit; i++)
         {
-            _slimesLimit = 25;
-            if (_score >= 200)
-            {
-                _slimesLimit = 30;
-                if (_score >= 300)
-                {
-                    _slimesLimit = 35;
-                    if (_score >= 400)
-                    {
-                        _slimesLimit = 40;
-                        if (_score >= 500)
-                        {
-                            _slimesLimit = 50;
-                        }
-                    }
-                }
-            }
+            var spawn = Random.Range(0, _spawnPoints.Count);
+            Instantiate(_slimesTypes[0], _spawnPoints[spawn].transform.position, Quaternion.identity);
         }
     }
 
     public void Spawn()
     {
-        for(int i = 0;i < _slimesLimit; i++)
+        switch(_score)
         {
-            var spawn = UnityEngine.Random.Range(0, _spawnPoints.Count);
-            Instantiate(_slimePrefab, _spawnPoints[spawn].transform.position, Quaternion.identity);
+            case 75:
+                _slimesTypesLimit = 2;
+                _slimesLimit = 25;
+                SpawnByLimit(20, _slimesLimit);
+                break;
+            case 100:
+                _slimesTypesLimit = 3;
+                _slimesLimit = 30;
+                SpawnByLimit(25, _slimesLimit);
+                break;
+            case 150:
+                _slimesTypesLimit = 4;
+                _slimesLimit = 35;
+                SpawnByLimit(30, _slimesLimit);
+                break;
+            case 200:
+                _slimesTypesLimit = 5;
+                _slimesLimit = 40;
+                SpawnByLimit(35, _slimesLimit);
+                break;
         }
-    }
 
-    public void SpawnOnce()
-    {
-        var spawn = UnityEngine.Random.Range(0, _spawnPoints.Count);
-        Instantiate(_slimePrefab, _spawnPoints[spawn].transform.position, Quaternion.identity);
-    }
+        var spawn = Random.Range(0, _spawnPoints.Count);
 
+        if (_score > 200)
+        {
+            var luck = Random.Range(0, 10);
+
+            if(luck == 0)
+            {
+                Instantiate(_slimesTypes[5], _spawnPoints[spawn].transform.position, Quaternion.identity);
+            }
+        }
+
+        else
+        {
+            var slime = Random.Range(0, _slimesTypesLimit);
+            Instantiate(_slimesTypes[slime], _spawnPoints[spawn].transform.position, Quaternion.identity);
+        }
+
+        _score++;
+        _scoreText.text = _score.ToString();
+    }
 }

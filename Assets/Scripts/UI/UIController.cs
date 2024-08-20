@@ -7,15 +7,20 @@ public class UIController : MonoBehaviour
 {
     public PauseMenu pauseMenu;
     public GameOverMenu gameOverMenu;
+    public CharacterHealth _characterHelth;
+
 
     private bool isExitButtonPressed = false;
     private bool isRetryButtonPressed = false;
+
+    public bool isGame = true;
 
     void Start()
     {
         gameOverMenu.ExitButton.onClick.AddListener(OnExitButtonClicked);
         gameOverMenu.RetryButton.onClick.AddListener(OnRetryButtonClicked);
         pauseMenu.ExitButton.onClick.AddListener(OnExitButtonClicked);
+        isGame = true;
     }
 
     void OnExitButtonClicked()
@@ -54,15 +59,20 @@ public class UIController : MonoBehaviour
         {
             pauseMenu.PauseMenuToggle(true);
         }
-        if (!pauseMenu.isActiveAndEnabled)
-        {
-            Time.timeScale = 1;
-        }
-        gameOverMenu.SetGameOver();
+        // if (!pauseMenu.isActiveAndEnabled)
+        // {
+        //     Time.timeScale = 1;
+        //     isGame = true;
+        // }
     }
 
     void LateUpdate()
     {
+        if (_characterHelth._currentHealth <= 0 && isGame)
+        {
+            gameOverMenu.SetGameOver();
+            isGame = false;
+        }
         UIHandler();
         ButtonHandler();
     }

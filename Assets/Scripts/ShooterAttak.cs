@@ -22,7 +22,7 @@ public class ShooterAttak : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 StartCoroutine(Attack());
-                _spawn.SpawnOnce();
+                // _spawn.SpawnOnce();
                 Destroy(other.gameObject);
             }
         }
