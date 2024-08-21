@@ -21282,7 +21282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9baa79c2808fbd240ab37650039d50f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxWarriorHealth: 100000
+  _maxWarriorHealth: 150
   _maxShooterHealth: 120
   _maxWizardHealth: 100
   _maxHountrHealth: 130
