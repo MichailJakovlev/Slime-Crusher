@@ -9,6 +9,7 @@ public class Warrior : MonoBehaviour
 
     public Animator _characterAnim;
     public CharacterMovement _moveScript;
+    public CharacterHealth _characterHealth;
 
     public bool _cooldown = false;
     public SmallSlime _smallSlime;
@@ -23,6 +24,11 @@ public class Warrior : MonoBehaviour
                 StartCoroutine(CooldownTimer());
                 StartCoroutine(Attack());
             }
+        }
+
+        if(other.gameObject.tag == "Heal")
+        {
+            _characterHealth.GetHeal(other);
         }
     }
 

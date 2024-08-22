@@ -8,6 +8,7 @@ TagManager:
   - CharacterManager
   - PlayerAnimLayer
   - SpawnSlimes
+  - Heal
   layers:
   - Default
   - TransparentFX

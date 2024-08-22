@@ -6,7 +6,7 @@ public class CharacterHealth : MonoBehaviour
     [SerializeField] public int _maxShooterHealth;
     [SerializeField] public int _maxWizardHealth;
     [SerializeField] public int _maxHountrHealth;
-    
+
     public GameObject _playableCharacter;
     public Animator _characterAnim;
     public CharacterMovement _moveScript;
@@ -58,12 +58,18 @@ public class CharacterHealth : MonoBehaviour
         _healthBar.SetHealthBar(_currentHealth, _maxHealth);
     }
 
-    public void OnTriggerStay(Collider other)
+    public void GetHeal(Collider other)
     {
         if (other.gameObject.tag == "Heal")
         {
             Destroy(other.gameObject);
             _currentHealth += _maxHealth / 100 * 25;
+
+            if(_currentHealth > _maxHealth)
+            {
+                _currentHealth = _maxHealth;
+            }
+
             _healthBar.SetHealthBar(_currentHealth, _maxHealth);
         }
     }

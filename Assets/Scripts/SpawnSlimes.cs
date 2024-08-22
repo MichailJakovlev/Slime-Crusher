@@ -11,7 +11,7 @@ public class SpawnSlimes : MonoBehaviour
     private int _slimesTypesLimit = 1;
     private int _slimesLimit = 20;
 
-    int _score = 0;
+    public int _score = 0;
 
     void Start()
     {
@@ -65,6 +65,12 @@ public class SpawnSlimes : MonoBehaviour
             if(luck == 0)
             {
                 Instantiate(_slimesTypes[5], _spawnPoints[spawn].transform.position, Quaternion.identity);
+            }
+
+            else
+            {
+                var slime = Random.Range(0, _slimesTypesLimit);
+                Instantiate(_slimesTypes[slime], _spawnPoints[spawn].transform.position, Quaternion.identity);
             }
         }
 

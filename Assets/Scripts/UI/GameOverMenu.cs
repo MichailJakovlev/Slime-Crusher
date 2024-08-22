@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,44 +7,42 @@ public class GameOverMenu : MonoBehaviour
 {
     public UIController uiController;
     public GameObject gameOverMenu;
-    public CharacterHealth _characterHelth;
     public Button ExitButton;
     public Button RetryButton;
+    public SpawnSlimes spawnSlimes;
 
     public GameObject gameOverUI;
     public GameObject newRecordUI;
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI recordText;
-    public TextMeshProUGUI newRecordText;
+    public TextMeshProUGUI _scoreTextMenu;
+    public TextMeshProUGUI _recordTextMenu;
+    public TextMeshProUGUI _newRecordTextMenu;
 
-    public int score = 100;
-    public int record = 963;
+    int _score = 0;
 
     public void SetGameOver()
-    {      
-        if (_characterHelth._currentHealth <= 0)
-        {
-            RecordHandler();
-            gameOverMenu.SetActive(true);
-            Time.timeScale = 0;
-        }   
+    {
+        RecordHandler();
+        gameOverMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 
     void RecordHandler()
     {
-        if (score <= record)
-        {
-            newRecordUI.SetActive(false);
-            gameOverUI.SetActive(true);
-        }
-        else
+        _score = spawnSlimes._score;
+        if (_score > PlayerPrefs.GetInt("Record"))
         {
             newRecordUI.SetActive(true);
             gameOverUI.SetActive(false);
+            _newRecordTextMenu.text = _score.ToString();
+            PlayerPrefs.SetInt("Record", _score);
         }
-        scoreText.text = score.ToString();
-        recordText.text = record.ToString();
-        newRecordText.text = score.ToString();
+        else
+        {
+            newRecordUI.SetActive(false);
+            gameOverUI.SetActive(true);
+            _scoreTextMenu.text = _score.ToString();
+            _recordTextMenu.text = PlayerPrefs.GetInt("Record").ToString();
+        }
     }
 
 }

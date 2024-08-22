@@ -16,7 +16,5 @@ public class SlimesMovement : MonoBehaviour
     void LateUpdate()
     {
         _agent.SetDestination(_target.transform.position);
-
-        
     }
 }
