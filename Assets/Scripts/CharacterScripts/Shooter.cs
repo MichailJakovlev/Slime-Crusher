@@ -11,19 +11,30 @@ public class Shooter : MonoBehaviour
     public CharacterMovement _moveScript;
 
     public bool _cooldown = false;
+
     public SmallSlime _smallSlime;
 
-    public void OnTriggerStay(Collider other)
+    public GameObject _shooter;
+    public Transform arrowSpawnPoint;
+    public GameObject _arrow;
+    public float arrowSpeed = 10;
+
+    void LateUpdate()
     {
-        if(other.gameObject.tag == "Slime")
-        {
-            if (Input.GetMouseButton(0) && _cooldown == false)
+        if (Input.GetMouseButton(0) && _cooldown == false)
             {
-                other.gameObject.GetComponent<SmallSlime>().GetHit(_damageValue);
+                Vector2 center = new Vector2(0.5f, 0.5f);
+                Vector2 mousePosition = Input.mousePosition;
+                mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
+                var angle = Mathf.Atan2(mousePosition.x - center.x, mousePosition.y - center.y) * Mathf.Rad2Deg;
+                _shooter.transform.rotation = Quaternion.Euler(0, angle, 0);
+
+                var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+                arrow.transform.Rotate(90, 0, 0);
+                arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
                 StartCoroutine(CooldownTimer());
                 StartCoroutine(Attack());
             }
-        }
     }
 
     IEnumerator CooldownTimer()

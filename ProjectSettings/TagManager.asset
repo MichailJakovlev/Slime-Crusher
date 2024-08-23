@@ -8,6 +8,7 @@ TagManager:
   - CharacterManager
   - PlayerAnimLayer
   - SpawnSlimes
+  - Projectile
   layers:
   - Default
   - TransparentFX
