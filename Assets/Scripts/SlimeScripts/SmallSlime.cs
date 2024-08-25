@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,12 +13,13 @@ public class SmallSlime : MonoBehaviour
     public SlimesMovement _moveScript;
     public CharacterHealth _characterHealth;
     public SpawnSlimes _spawnSlimes;
+    public GameObject _healBottle;
 
     public int _currentHealth;
+    public int _luck;
     public bool _cooldown = false;
     public bool _isDamageTaking = false;
 
-    int _spawnScale;
 
     void Start()
     {
@@ -48,9 +50,13 @@ public class SmallSlime : MonoBehaviour
 
             _spawnSlimes.Spawn();
 
-            if(_characterHealth._currentHealth <= _characterHealth._maxHealth / 100 * 75)
+            if(_characterHealth._currentHealth <= _characterHealth._maxHealth / 2)
             {
-                _characterHealth._currentHealth += 5;
+                _luck = UnityEngine.Random.Range(0, 10);
+                if(_luck == 1)
+                {
+                    Instantiate(_healBottle, gameObject.transform.position, Quaternion.identity);
+                }
             }
         }
         else

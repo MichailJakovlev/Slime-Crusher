@@ -66,6 +66,12 @@ public class SpawnSlimes : MonoBehaviour
             {
                 Instantiate(_slimesTypes[5], _spawnPoints[spawn].transform.position, Quaternion.identity);
             }
+
+            else
+            {
+                var slime = Random.Range(0, _slimesTypesLimit);
+                Instantiate(_slimesTypes[slime], _spawnPoints[spawn].transform.position, Quaternion.identity);
+            }
         }
 
         else

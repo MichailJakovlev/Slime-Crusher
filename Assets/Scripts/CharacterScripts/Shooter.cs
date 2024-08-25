@@ -19,6 +19,8 @@ public class Shooter : MonoBehaviour
     public GameObject _arrow;
     public float arrowSpeed = 10;
 
+    public CharacterHealth _characterHealth;
+
     void LateUpdate()
     {
         if (Input.GetMouseButton(0) && _cooldown == false)
@@ -35,6 +37,13 @@ public class Shooter : MonoBehaviour
                 StartCoroutine(CooldownTimer());
                 StartCoroutine(Attack());
             }
+    }
+    public void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.tag == "Heal")
+        {
+            _characterHealth.GetHeal(other);
+        }
     }
 
     IEnumerator CooldownTimer()
@@ -58,7 +67,7 @@ public class Shooter : MonoBehaviour
 
         while (Time.time < startTime + _animationTime)
         {
-            _characterAnim.Play("Shooter.BowShot");
+            _characterAnim.Play("BowShot");
             yield return null;
         }
 

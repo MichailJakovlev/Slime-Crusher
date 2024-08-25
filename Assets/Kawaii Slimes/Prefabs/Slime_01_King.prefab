@@ -58,7 +58,9 @@ MonoBehaviour:
   _moveScript: {fileID: 3523642636338123867}
   _characterHealth: {fileID: 0}
   _spawnSlimes: {fileID: 0}
+  _healBottle: {fileID: 810595472911070695, guid: 36962cea6bc3e6642a1cb0d932206ffa, type: 3}
   _currentHealth: 0
+  _luck: 0
   _cooldown: 0
   _isDamageTaking: 0
 --- !u!195 &4413844942254601297

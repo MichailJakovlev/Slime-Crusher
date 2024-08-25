@@ -59,6 +59,7 @@ public class CharacterMovement : MonoBehaviour
                     _moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
                     _anim.Play("RunForward");
+                    _anim.Play("Shoot.RunForward");
 
                     _agent.velocity = _moveDir * _moveSpeed * Time.fixedDeltaTime;
                     _agent.SetDestination(_moveDir + _agent.transform.position);
@@ -69,6 +70,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 _agent.SetDestination(_agent.transform.position);
                 _anim.Play("Idle");
+               // _anim.Play("Shoot.Idle");
             }
         }
     }

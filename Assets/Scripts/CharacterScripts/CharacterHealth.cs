@@ -58,12 +58,18 @@ public class CharacterHealth : MonoBehaviour
         _healthBar.SetHealthBar(_currentHealth, _maxHealth);
     }
 
-    public void OnTriggerStay(Collider other)
+    public void GetHeal(Collider other)
     {
         if (other.gameObject.tag == "Heal")
         {
             Destroy(other.gameObject);
             _currentHealth += _maxHealth / 100 * 25;
+
+            if(_currentHealth > _maxHealth)
+            {
+                _currentHealth = _maxHealth;
+            }
+
             _healthBar.SetHealthBar(_currentHealth, _maxHealth);
         }
     }
