@@ -2990,8 +2990,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422508288}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.35881177, y: 1.2447777, z: 1.1242882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.116, y: 1.082, z: 0.316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7399,6 +7399,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1485943212}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: StartTimer
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14668,6 +14680,10 @@ PrefabInstance:
       value: PlayerAnimLayer
       objectReference: {fileID: 0}
     - target: {fileID: 7452810056114862048, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
+      propertyPath: _moveSpeed
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452810056114862048, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
       propertyPath: _variableJoystick
       value: 
       objectReference: {fileID: 2093249377}
@@ -14684,9 +14700,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7238437145319481431, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2129655977}
-    - targetCorrespondingSourceObject: {fileID: 7238437145319481431, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2129655979}
     - targetCorrespondingSourceObject: {fileID: 7238437145319481431, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2129655976}
@@ -14750,29 +14763,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
---- !u!135 &2129655979
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129655973}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 2.76
-  m_Center: {x: 0, y: 1, z: 3.5}
 --- !u!114 &2129655981 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7452810056114862048, guid: 151c5bff8ad8b104fa10b607fa667a25, type: 3}
@@ -14796,13 +14788,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83db5479ba2de7d4db05bf18dd3e6d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageValue: 5
-  _animationTime: 0.3
+  _damageValue: 15
+  _animationTime: 0.4
   _cooldownTime: 0.25
   _characterAnim: {fileID: 1251356896}
   _moveScript: {fileID: 2129655981}
   _cooldown: 0
   _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
+  _shooter: {fileID: 2129655973}
+  arrowSpawnPoint: {fileID: 2129655972}
+  _arrow: {fileID: 4865309214770636011, guid: 45804eb2722b83845adbcf2d72da12dd, type: 3}
+  arrowSpeed: 10
+  _characterHealth: {fileID: 0}
 --- !u!4 &2132676837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}

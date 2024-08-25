@@ -33,6 +33,11 @@ public class UIController : MonoBehaviour
         isRetryButtonPressed = true;
     }
 
+    public void StartTimer()
+    {
+        Time.timeScale = 1;
+    }
+
     void ButtonHandler()
     {
         if (isExitButtonPressed)
