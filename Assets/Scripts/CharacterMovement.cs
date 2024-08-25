@@ -58,8 +58,19 @@ public class CharacterMovement : MonoBehaviour
 
                     _moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
-                    _anim.Play("RunForward");
-                    _anim.Play("Shoot.RunForward");
+
+                    switch (PlayerPrefs.GetString("PlayableCharacter"))
+                    {
+                        case "Warrior":
+                            _anim.Play("RunForward");
+                            break;
+                        case "Shooter":
+                            _anim.Play("Shoot.RunForward");
+                            break;
+                        case "Wizard":
+                            _anim.Play("RunForward");
+                            break;
+                    }
 
                     _agent.velocity = _moveDir * _moveSpeed * Time.fixedDeltaTime;
                     _agent.SetDestination(_moveDir + _agent.transform.position);
@@ -69,8 +80,19 @@ public class CharacterMovement : MonoBehaviour
             else if (isAttack == false)
             {
                 _agent.SetDestination(_agent.transform.position);
-                _anim.Play("Idle");
-               // _anim.Play("Shoot.Idle");
+
+                switch (PlayerPrefs.GetString("PlayableCharacter"))
+                {
+                    case "Warrior":
+                        _anim.Play("Idle");
+                        break;
+                    case "Shooter":
+                        _anim.Play("Shoot.Idle");
+                        break;
+                    case "Wizard":
+                        _anim.Play("Idle");
+                        break;
+                }
             }
         }
     }
