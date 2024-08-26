@@ -10,6 +10,7 @@ public class Warrior : MonoBehaviour
     public Animator _characterAnim;
     public CharacterMovement _moveScript;
     public CharacterHealth _characterHealth;
+    public CharacterBoosts _characterBoosts;
 
     public bool _cooldown = false;
     public SmallSlime _smallSlime;
@@ -29,6 +30,16 @@ public class Warrior : MonoBehaviour
         if(other.gameObject.tag == "Heal")
         {
             _characterHealth.GetHeal(other);
+        }
+
+        if(other.gameObject.tag == "Speed")
+        {
+            _characterBoosts.SpeedBoost(other);
+        }
+        
+        if (other.gameObject.tag == "Damage")
+        {
+            _characterBoosts.DamageBoost(other);
         }
     }
 

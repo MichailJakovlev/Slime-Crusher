@@ -355,8 +355,11 @@ MonoBehaviour:
   _characterHealth: {fileID: 0}
   _spawnSlimes: {fileID: 0}
   _healBottle: {fileID: 810595472911070695, guid: 36962cea6bc3e6642a1cb0d932206ffa, type: 3}
+  _speedBottle: {fileID: 810595472911070695, guid: 2b9f97104749a074ea4baa18d534a363, type: 3}
+  _damageBottle: {fileID: 810595472911070695, guid: 6496235a706b02d468bddb58ca20a606, type: 3}
   _currentHealth: 0
   _luck: 0
+  _boost: 0
   _cooldown: 0
   _isDamageTaking: 0
 --- !u!1 &7534262480104691789

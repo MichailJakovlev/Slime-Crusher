@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.788166
@@ -415,6 +419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.374317
@@ -693,6 +701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1934536963635419817, guid: a1bbfbae6790b6444b82cf21653d7617, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -816,6 +828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -840,6 +856,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -968,6 +988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.183197
@@ -1033,6 +1057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.788166
@@ -1097,6 +1125,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1364,6 +1396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1543,6 +1579,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1926,6 +1966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_04
       objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.288166
@@ -1995,6 +2039,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2266,6 +2314,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2643,6 +2695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.622063
@@ -2759,6 +2815,10 @@ PrefabInstance:
     - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_Name
       value: FallenTree_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 3319335334345305201, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_LocalScale.x
@@ -3018,6 +3078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5546413172616124203, guid: 598e0a14a6cd8eb46aa28e9380775a6f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3120,6 +3184,10 @@ PrefabInstance:
     - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
       propertyPath: m_Name
       value: Bush_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3355,6 +3423,10 @@ PrefabInstance:
     - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
       propertyPath: m_Name
       value: Bush_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3613,6 +3685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.772888
@@ -3729,6 +3805,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3913,6 +3993,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4111,6 +4195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4180,6 +4268,10 @@ PrefabInstance:
     - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_Name
       value: FallenTree_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 3319335334345305201, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_LocalScale.x
@@ -4417,6 +4509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenTable_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1112840750736512847, guid: b23cf09e0734f64448c6efb3d36a6459, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4494,6 +4590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenTable_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1112840750736512847, guid: b23cf09e0734f64448c6efb3d36a6459, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4558,6 +4658,10 @@ PrefabInstance:
     - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
       propertyPath: m_Name
       value: PottedPlants_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4657,6 +4761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4733,6 +4841,10 @@ PrefabInstance:
     - target: {fileID: 9161131422644436167, guid: 813bb717dc40c714c945c43743b0c58b, type: 3}
       propertyPath: m_Name
       value: Bottle_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161131422644436167, guid: 813bb717dc40c714c945c43743b0c58b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4831,6 +4943,10 @@ PrefabInstance:
     - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
       propertyPath: m_Name
       value: SpringTree_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5097,6 +5213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5205,6 +5325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5250,6 +5374,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5373,6 +5501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5397,6 +5529,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5514,6 +5650,10 @@ PrefabInstance:
     - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
       propertyPath: m_Name
       value: Bush_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5718,6 +5858,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5938,6 +6082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6120,6 +6268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6222,6 +6374,10 @@ PrefabInstance:
     - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
       propertyPath: m_Name
       value: SpringTree_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6352,6 +6508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6426,6 +6586,10 @@ PrefabInstance:
     - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
       propertyPath: m_Name
       value: PottedPlants_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6705,6 +6869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6750,6 +6918,10 @@ PrefabInstance:
     - target: {fileID: 8564786123435025986, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
       propertyPath: m_Name
       value: TrunkStack_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564786123435025986, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 9049960591140748536, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6815,6 +6987,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6947,6 +7123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5546413172616124203, guid: 598e0a14a6cd8eb46aa28e9380775a6f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7032,6 +7212,10 @@ PrefabInstance:
     - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
       propertyPath: m_Name
       value: PottedPlants_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7305,6 +7489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161131422644436167, guid: 813bb717dc40c714c945c43743b0c58b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7466,6 +7654,10 @@ PrefabInstance:
     - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
       propertyPath: m_Name
       value: PottedPlants_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8160,6 +8352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8231,6 +8427,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8569,6 +8769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5546413172616124203, guid: 598e0a14a6cd8eb46aa28e9380775a6f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8667,6 +8871,10 @@ PrefabInstance:
     - target: {fileID: 8564786123435025986, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
       propertyPath: m_Name
       value: TrunkStack_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564786123435025986, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 9049960591140748536, guid: 81e152245eda4364f8a0bdac4999dfb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8785,6 +8993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8871,6 +9083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8947,6 +9163,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9061,6 +9281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BonFire_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1980320178175070823, guid: 2df30fc5b60f17646bce1554e46da0c0, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9137,6 +9361,10 @@ PrefabInstance:
     - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
       propertyPath: m_Name
       value: Bush_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9574,6 +9802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.424484
@@ -9643,6 +9875,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9864,6 +10100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_04 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.538165
@@ -9959,6 +10199,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10174,6 +10418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5546413172616124203, guid: 598e0a14a6cd8eb46aa28e9380775a6f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10323,6 +10571,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10650,6 +10902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5546413172616124203, guid: 598e0a14a6cd8eb46aa28e9380775a6f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10726,6 +10982,10 @@ PrefabInstance:
     - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
       propertyPath: m_Name
       value: SpringTree_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10834,6 +11094,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11051,6 +11315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickWall_02 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.940132
@@ -11115,6 +11383,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11305,6 +11577,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11634,6 +11910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle_01
       objectReference: {fileID: 0}
+    - target: {fileID: 9161131422644436167, guid: 813bb717dc40c714c945c43743b0c58b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11737,6 +12017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11782,6 +12066,10 @@ PrefabInstance:
     - target: {fileID: 228916209715483581, guid: 60fa16b786376ad49adeb26a68a6a9bb, type: 3}
       propertyPath: m_Name
       value: FallenTree_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 228916209715483581, guid: 60fa16b786376ad49adeb26a68a6a9bb, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 605336920869554439, guid: 60fa16b786376ad49adeb26a68a6a9bb, type: 3}
       propertyPath: m_LocalScale.x
@@ -12169,6 +12457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trunk_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1934536963635419817, guid: a1bbfbae6790b6444b82cf21653d7617, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12320,6 +12612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12443,6 +12739,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12581,6 +12881,10 @@ PrefabInstance:
     - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
       propertyPath: m_Name
       value: WoodenFence_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12767,6 +13071,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12988,6 +13296,10 @@ PrefabInstance:
     - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
       propertyPath: m_Name
       value: SpringTree_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13231,6 +13543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13406,6 +13722,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13596,6 +13916,10 @@ PrefabInstance:
     - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
       propertyPath: m_Name
       value: SpringTree_04 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13897,6 +14221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13942,6 +14270,7 @@ GameObject:
   - component: {fileID: 1737833799}
   - component: {fileID: 1737833798}
   - component: {fileID: 1737833800}
+  - component: {fileID: 1737833801}
   m_Layer: 0
   m_Name: Character Manager
   m_TagString: CharacterManager
@@ -14007,6 +14336,23 @@ MonoBehaviour:
   _currentHealth: 0
   _maxHealth: 0
   _animationTime: 1
+--- !u!114 &1737833801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737833797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2a6339a7a8deb438ea53ea70558dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 0}
+  _speedBoostTime: 15
+  _damageBoostTime: 15
+  _speed: 0
+  _damage: 0
 --- !u!1 &1742959661
 GameObject:
   m_ObjectHideFlags: 0
@@ -14311,6 +14657,7 @@ MonoBehaviour:
   _characterAnim: {fileID: 747659923}
   _moveScript: {fileID: 1763672787}
   _characterHealth: {fileID: 1737833800}
+  _characterBoosts: {fileID: 1737833801}
   _cooldown: 0
   _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
 --- !u!4 &1767693615 stripped
@@ -14505,6 +14852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9161131422644436167, guid: 813bb717dc40c714c945c43743b0c58b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14591,6 +14942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14673,6 +15028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14744,6 +15103,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14908,6 +15271,10 @@ PrefabInstance:
     - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
       propertyPath: m_Name
       value: Bush_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15437,6 +15804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PottedPlants_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5334240471791030119, guid: f840a950009de0643a3e61ab6cbe6a4b, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15534,6 +15905,10 @@ PrefabInstance:
     - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
       propertyPath: m_Name
       value: SpringTree_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15633,6 +16008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9188525909727753138, guid: 87343b8d93d7dd54892b621472d496a1, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15678,6 +16057,10 @@ PrefabInstance:
     - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_Name
       value: FallenTree_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691874167212324555, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 3319335334345305201, guid: 0b2cad31d93bf6e41bc32fdc190c4a03, type: 3}
       propertyPath: m_LocalScale.x
@@ -15829,6 +16212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15874,6 +16261,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15960,6 +16351,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16112,6 +16507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16157,6 +16556,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16243,6 +16646,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16408,6 +16815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16479,6 +16890,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16596,6 +17011,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16735,6 +17154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1804244151549930758, guid: a9e8ec9d2ae5a9e46a3c2f168aef0d21, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16833,6 +17256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringTree_04 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1892688962060378242, guid: c55fbaf5faa363c428c8ae328f1d631e, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16878,6 +17305,10 @@ PrefabInstance:
     - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_Name
       value: Rock_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 447065075813881366, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 972667558718000300, guid: 2ef75b4e11b3ac34291fcb9eda291e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16969,6 +17400,10 @@ PrefabInstance:
     - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_Name
       value: BrickWall_02 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587417470786599933, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     - target: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17102,6 +17537,10 @@ PrefabInstance:
     - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
       propertyPath: m_Name
       value: WoodenFence_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17546,6 +17985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenFence_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7837089443609101010, guid: 8f378f781ef6bc74999babc5768e0c7f, type: 3}
+      propertyPath: m_TagString
+      value: Map
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17766,13 +18209,14 @@ MonoBehaviour:
   _cooldownTime: 0.3
   _characterAnim: {fileID: 1251356896}
   _moveScript: {fileID: 2129655981}
-  _cooldown: 0
-  _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
-  _shooter: {fileID: 2129655973}
-  arrowSpawnPoint: {fileID: 422508289}
-  _arrow: {fileID: 4865309214770636011, guid: 45804eb2722b83845adbcf2d72da12dd, type: 3}
-  arrowSpeed: 10
+  _characterBoosts: {fileID: 1737833801}
   _characterHealth: {fileID: 1737833800}
+  _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
+  arrowSpawnPoint: {fileID: 422508289}
+  _shooter: {fileID: 2129655973}
+  _arrow: {fileID: 4865309214770636011, guid: 45804eb2722b83845adbcf2d72da12dd, type: 3}
+  _cooldown: 0
+  arrowSpeed: 10
 --- !u!4 &2132676837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}

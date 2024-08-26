@@ -14,11 +14,16 @@ public class SmallSlime : MonoBehaviour
     public CharacterHealth _characterHealth;
     public SpawnSlimes _spawnSlimes;
     public GameObject _healBottle;
+    public GameObject _speedBottle;
+    public GameObject _damageBottle;
 
     public int _currentHealth;
     public int _luck;
+    public int _boost;
     public bool _cooldown = false;
     public bool _isDamageTaking = false;
+
+
 
 
     void Start()
@@ -50,12 +55,25 @@ public class SmallSlime : MonoBehaviour
 
             _spawnSlimes.Spawn();
 
-            if(_characterHealth._currentHealth <= _characterHealth._maxHealth / 2)
+            if (_characterHealth._currentHealth <= _characterHealth._maxHealth / 2)
             {
                 _luck = UnityEngine.Random.Range(0, 10);
-                if(_luck == 1)
+                if (_luck == 1)
                 {
                     Instantiate(_healBottle, gameObject.transform.position, Quaternion.identity);
+                }
+            }
+
+            else
+            {
+                _boost = UnityEngine.Random.Range(0, 15);
+                if (_boost > 0)
+                {
+                    Instantiate(_speedBottle, gameObject.transform.position, Quaternion.identity);
+                }
+                else if (_boost == 15)
+                {
+                    Instantiate(_damageBottle, gameObject.transform.position, Quaternion.identity);
                 }
             }
         }

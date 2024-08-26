@@ -27,7 +27,7 @@ public class ProjectileSlime : MonoBehaviour
             _characterHealth.GetHit(_shootSlime._projectileDamage);
             Destroy(gameObject);
         }
-        if (other.gameObject && other.gameObject.tag != "Slime" && other.gameObject.tag != "Projectile")
+        if (other.gameObject.tag == "Map")
         {
             Destroy(gameObject);
         }
