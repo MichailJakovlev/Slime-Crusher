@@ -23,7 +23,7 @@ public class Arrow : MonoBehaviour
             other.gameObject.GetComponent<SmallSlime>().GetHit(_shooter._damageValue);
             Destroy(gameObject);
         }
-        if (other.gameObject)
+        if (other.gameObject && other.gameObject.tag != "Player")
         {
             Destroy(gameObject);
         }

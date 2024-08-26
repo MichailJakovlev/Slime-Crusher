@@ -8,7 +8,7 @@ public class SpawnSlimes : MonoBehaviour
     public List<GameObject> _slimesTypes;
     public TextMeshProUGUI _scoreText;
 
-    private int _slimesTypesLimit = 1;
+    private int _slimesTypesLimit = 5;
     private int _slimesLimit = 20;
 
     public int _score = 0;
