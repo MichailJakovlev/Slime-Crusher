@@ -9,17 +9,16 @@ public class Shooter : MonoBehaviour
 
     public Animator _characterAnim;
     public CharacterMovement _moveScript;
-
-    public bool _cooldown = false;
-
+    public CharacterBoosts _characterBoosts;
+    public CharacterHealth _characterHealth;
     public SmallSlime _smallSlime;
 
-    public GameObject _shooter;
     public Transform arrowSpawnPoint;
+    public GameObject _shooter;
     public GameObject _arrow;
-    public float arrowSpeed = 10;
 
-    public CharacterHealth _characterHealth;
+    public bool _cooldown = false;
+    public float arrowSpeed = 10;
 
     void LateUpdate()
     {
@@ -43,6 +42,16 @@ public class Shooter : MonoBehaviour
         if(other.gameObject.tag == "Heal")
         {
             _characterHealth.GetHeal(other);
+        }
+
+        if (other.gameObject.tag == "Speed")
+        {
+            _characterBoosts.SpeedBoost(other);
+        }
+
+        if (other.gameObject.tag == "Damage")
+        {
+            _characterBoosts.DamageBoost(other);
         }
     }
 

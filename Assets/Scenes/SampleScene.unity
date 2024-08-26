@@ -11852,6 +11852,7 @@ GameObject:
   - component: {fileID: 1737833799}
   - component: {fileID: 1737833798}
   - component: {fileID: 1737833800}
+  - component: {fileID: 1737833801}
   m_Layer: 0
   m_Name: Character Manager
   m_TagString: CharacterManager
@@ -11917,6 +11918,23 @@ MonoBehaviour:
   _currentHealth: 0
   _maxHealth: 0
   _animationTime: 1
+--- !u!114 &1737833801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737833797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2a6339a7a8deb438ea53ea70558dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _character: {fileID: 0}
+  _speedBoostTime: 15
+  _damageBoostTime: 15
+  _speed: 0
+  _damage: 0
 --- !u!1 &1742959661
 GameObject:
   m_ObjectHideFlags: 0
@@ -12200,6 +12218,7 @@ MonoBehaviour:
   _characterAnim: {fileID: 747659923}
   _moveScript: {fileID: 1763672787}
   _characterHealth: {fileID: 1737833800}
+  _characterBoosts: {fileID: 1737833801}
   _cooldown: 0
   _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
 --- !u!4 &1767693615 stripped
@@ -14793,13 +14812,14 @@ MonoBehaviour:
   _cooldownTime: 0.25
   _characterAnim: {fileID: 1251356896}
   _moveScript: {fileID: 2129655981}
-  _cooldown: 0
+  _characterBoosts: {fileID: 1737833801}
+  _characterHealth: {fileID: 1737833800}
   _smallSlime: {fileID: 6741355579416346688, guid: d941199d4a58fcb45adc75ea8e37c42c, type: 3}
-  _shooter: {fileID: 2129655973}
   arrowSpawnPoint: {fileID: 2129655972}
+  _shooter: {fileID: 2129655973}
   _arrow: {fileID: 4865309214770636011, guid: 45804eb2722b83845adbcf2d72da12dd, type: 3}
+  _cooldown: 0
   arrowSpeed: 10
-  _characterHealth: {fileID: 0}
 --- !u!4 &2132676837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2928336840982241607, guid: 17c46f4ea9c350c42aad0d4f5417e601, type: 3}

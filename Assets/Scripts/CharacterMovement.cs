@@ -58,7 +58,6 @@ public class CharacterMovement : MonoBehaviour
 
                     _moveDir = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
 
-
                     switch (PlayerPrefs.GetString("PlayableCharacter"))
                     {
                         case "Warrior":
