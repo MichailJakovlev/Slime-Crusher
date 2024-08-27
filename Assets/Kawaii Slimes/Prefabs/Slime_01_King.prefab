@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1990cfffb2bcb6c43a05926bcd06d66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageValue: 25
+  _damageValue: 17
   _slimeHealth: 150
   _animationTime: 0.5
   _cooldownTime: 2
