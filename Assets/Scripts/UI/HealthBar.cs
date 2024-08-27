@@ -6,6 +6,10 @@ public class HealthBar : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI healthText;
     public Slider slider;
+    private void Start()
+    {
+        slider.enabled = false;
+    }
 
     public void SetHealthBar(int currentHealth, int maxHealth)
     {
