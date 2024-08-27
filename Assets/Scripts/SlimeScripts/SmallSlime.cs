@@ -23,11 +23,9 @@ public class SmallSlime : MonoBehaviour
     public bool _cooldown = false;
     public bool _isDamageTaking = false;
 
-
-
-
     void Start()
     {
+        _isDamageTaking = false;
         _currentHealth = _slimeHealth;
         _characterHealth = GameObject.FindWithTag("CharacterManager").GetComponent<CharacterHealth>();
         _spawnSlimes = GameObject.FindWithTag("SpawnSlimes").GetComponent<SpawnSlimes>();
