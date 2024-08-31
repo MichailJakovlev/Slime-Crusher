@@ -64,11 +64,6 @@ public class UIController : MonoBehaviour
         {
             pauseMenu.PauseMenuToggle(true);
         }
-        // if (!pauseMenu.isActiveAndEnabled)
-        // {
-        //     Time.timeScale = 1;
-        //     isGame = true;
-        // }
     }
 
     void LateUpdate()

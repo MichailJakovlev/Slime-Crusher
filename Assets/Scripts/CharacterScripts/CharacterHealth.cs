@@ -15,6 +15,7 @@ public class CharacterHealth : MonoBehaviour
     public int _currentHealth;
     public int _maxHealth;
     public float _animationTime;
+    public AudioManager _audioManager;
 
     void Start()
     {
@@ -54,7 +55,7 @@ public class CharacterHealth : MonoBehaviour
         {
             _currentHealth = _currentHealth - hitAmount;
         }
-
+        _audioManager.TakeDamageSound();
         _healthBar.SetHealthBar(_currentHealth, _maxHealth);
     }
 

@@ -20,9 +20,6 @@ public class CharacterManager : MonoBehaviour
             case "Wizard":
                 _wizard.SetActive(true);
                 break;
-            case "Hounter":
-                _hounter.SetActive(true);
-                break;
         }
     }
 }

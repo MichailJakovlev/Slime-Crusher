@@ -20,6 +20,8 @@ public class Shooter : MonoBehaviour
     public bool _cooldown = false;
     public float arrowSpeed = 10;
 
+    public AudioManager _audioManager;
+
     void LateUpdate()
     {
         if (Input.GetMouseButton(0) && _cooldown == false)
@@ -35,6 +37,7 @@ public class Shooter : MonoBehaviour
                 arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
                 StartCoroutine(CooldownTimer());
                 StartCoroutine(Attack());
+                _audioManager.BowSound();
             }
     }
     public void OnTriggerStay(Collider other)
@@ -42,16 +45,19 @@ public class Shooter : MonoBehaviour
         if(other.gameObject.tag == "Heal")
         {
             _characterHealth.GetHeal(other);
+            _audioManager.TakeBoostSound();
         }
 
         if (other.gameObject.tag == "Speed")
         {
             _characterBoosts.SpeedBoost(other);
+            _audioManager.TakeBoostSound();
         }
 
         if (other.gameObject.tag == "Damage")
         {
             _characterBoosts.DamageBoost(other);
+            _audioManager.TakeBoostSound();
         }
     }
 

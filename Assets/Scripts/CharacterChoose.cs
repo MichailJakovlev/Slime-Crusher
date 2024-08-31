@@ -27,11 +27,5 @@ public class CharacterChoose : MonoBehaviour
             PlayerPrefs.Save();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-        else
-        {
-            PlayerPrefs.SetString("PlayableCharacter", "Hounter");
-            PlayerPrefs.Save();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
     }
 }

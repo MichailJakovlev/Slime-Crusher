@@ -26,9 +26,6 @@ public class CameraController : MonoBehaviour
             case "Wizard":
                 target = _wizard.transform;
                 break;
-            case "Hounter":
-                target = _hounter.transform;
-                break;
         }
 
         _offset = transform.position - target.position;

@@ -17,6 +17,8 @@ public class GameOverMenu : MonoBehaviour
     public TextMeshProUGUI _recordTextMenu;
     public TextMeshProUGUI _newRecordTextMenu;
 
+    public AudioManager _audioManager;
+
     int _score = 0;
 
     public void SetGameOver()
@@ -35,6 +37,7 @@ public class GameOverMenu : MonoBehaviour
             gameOverUI.SetActive(false);
             _newRecordTextMenu.text = _score.ToString();
             PlayerPrefs.SetInt("Record", _score);
+            _audioManager.NewRecordSound();
         }
         else
         {
@@ -42,6 +45,7 @@ public class GameOverMenu : MonoBehaviour
             gameOverUI.SetActive(true);
             _scoreTextMenu.text = _score.ToString();
             _recordTextMenu.text = PlayerPrefs.GetInt("Record").ToString();
+            _audioManager.GameOverSound();
         }
     }
 
