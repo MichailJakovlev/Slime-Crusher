@@ -7,7 +7,7 @@ public class SlimesMovement : MonoBehaviour
     public GameObject _target;
     public Animator _anim;
     public bool isAttack = false;
-    
+
     private void Start()
     {
         _target = GameObject.FindWithTag("Player");
