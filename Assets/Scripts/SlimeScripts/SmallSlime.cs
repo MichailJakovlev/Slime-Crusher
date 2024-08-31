@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -65,11 +64,11 @@ public class SmallSlime : MonoBehaviour
             else
             {
                 _boost = UnityEngine.Random.Range(0, 15);
-                if (_boost > 0)
+                if (_boost == 0)
                 {
                     Instantiate(_speedBottle, gameObject.transform.position, Quaternion.identity);
                 }
-                else if (_boost == 15)
+                else if (_boost == 1)
                 {
                     Instantiate(_damageBottle, gameObject.transform.position, Quaternion.identity);
                 }

@@ -8,8 +8,6 @@ public class CharacterHealth : MonoBehaviour
     [SerializeField] public int _maxHountrHealth;
 
     public GameObject _playableCharacter;
-    public Animator _characterAnim;
-    public CharacterMovement _moveScript;
     public HealthBar _healthBar;
 
     public int _currentHealth;
@@ -20,8 +18,6 @@ public class CharacterHealth : MonoBehaviour
     void Start()
     {
         _playableCharacter = GameObject.FindWithTag("Player");
-        _characterAnim = GameObject.FindWithTag("PlayerAnimLayer").GetComponent<Animator>();
-        _moveScript = GameObject.FindWithTag("Player").GetComponent<CharacterMovement>();
 
         switch (PlayerPrefs.GetString("PlayableCharacter"))
         {

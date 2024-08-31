@@ -24,7 +24,7 @@ public class CharacterBoosts : MonoBehaviour
                 _damage = _character.GetComponent<Shooter>()._damageValue;
                 break;
             case "Wizard":
-                //_damage = _character.GetComponent<Wizard>()._damageValue;
+                _damage = _character.GetComponent<Wizard>()._damageValue;
                 break;
         }
     }
@@ -48,7 +48,7 @@ public class CharacterBoosts : MonoBehaviour
                 _character.GetComponent<Shooter>()._damageValue = _damage * 2;
                 break;
             case "Wizard":
-                //_damage = _character.GetComponent<Wizard>()._damageValue = _damage * 2;
+                _damage = _character.GetComponent<Wizard>()._damageValue = _damage * 2;
                 break;
         }
         StartCoroutine(Damage());
@@ -83,7 +83,7 @@ public class CharacterBoosts : MonoBehaviour
                 _character.GetComponent<Shooter>()._damageValue = _damage;
                 break;
             case "Wizard":
-                //_damage = _character.GetComponent<Wizard>()._damageValue = _damage;
+                _damage = _character.GetComponent<Wizard>()._damageValue = _damage;
                 break;
         }
     }

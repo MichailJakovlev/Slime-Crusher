@@ -302,7 +302,7 @@ MonoBehaviour:
   _projectileSpawnPoint: {fileID: 8881701879396319944}
   projectileSpeed: 5
   _projectileDamage: 10
-  _projectile: {fileID: 8724355721031955484, guid: efaff9c9b9ff2b94886f48fb255da641, type: 3}
+  _projectile: {fileID: 2643484301536260854, guid: 7184026df68dba542a49f1fac2a97d31, type: 3}
 --- !u!95 &-6949651795843095629
 Animator:
   serializedVersion: 5
@@ -382,7 +382,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &7647819984296596885
 GameObject:
   m_ObjectHideFlags: 0

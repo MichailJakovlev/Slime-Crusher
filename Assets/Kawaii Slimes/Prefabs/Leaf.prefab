@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8489930281863383373
+--- !u!1001 &2913515763693178791
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6619998
+      value: 0.771
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56,36 +56,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leaf
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
-      propertyPath: m_TagString
-      value: Projectile
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5001430612153624824}
+      addedObject: {fileID: 3897243803337741227}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -4587548641343413195}
+      addedObject: {fileID: -4433569367455637596}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -2370052112171695363}
+      addedObject: {fileID: -2439151375320850428}
   m_SourcePrefab: {fileID: 100100000, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
---- !u!1 &8724355721031955484 stripped
+--- !u!1 &2643484301536260854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fc38eb1d15aad094cafb3cb0e7542241, type: 3}
-  m_PrefabInstance: {fileID: 8489930281863383373}
+  m_PrefabInstance: {fileID: 2913515763693178791}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &5001430612153624824
+--- !u!114 &3897243803337741227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643484301536260854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25f3e6fcaf952c42a98a3f576d94b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  _shootSlime: {fileID: 8758717389911760407, guid: 66ae442726d1cf4428dacb34edd61ac4, type: 3}
+  _characterHealth: {fileID: 0}
+--- !u!54 &-4433569367455637596
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8724355721031955484}
+  m_GameObject: {fileID: 2643484301536260854}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -106,13 +117,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &-4587548641343413195
+--- !u!135 &-2439151375320850428
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8724355721031955484}
+  m_GameObject: {fileID: 2643484301536260854}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -127,18 +138,3 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.22580603
   m_Center: {x: 0.018981516, y: -0.00880146, z: -0.033875927}
---- !u!114 &-2370052112171695363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8724355721031955484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25f3e6fcaf952c42a98a3f576d94b70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 5
-  _shootSlime: {fileID: 8758717389911760407, guid: 66ae442726d1cf4428dacb34edd61ac4, type: 3}
-  _characterHealth: {fileID: 0}
