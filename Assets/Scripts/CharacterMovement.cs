@@ -15,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
 
     float _turnSmoothVelocity;
     public bool isAttack = false;
+    public bool isWizardCasting = false;
 
     void LateUpdate()
     {
@@ -32,7 +33,7 @@ public class CharacterMovement : MonoBehaviour
             Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
             Vector3 joyStickDirection = Vector3.forward * _variableJoystick.Vertical + Vector3.right * _variableJoystick.Horizontal;
 
-            if (Application.isMobilePlatform && isAttack == false && _variableJoystick.Vertical != 0 && _variableJoystick.Horizontal != 0)
+            if (Application.isMobilePlatform && isAttack == false && _variableJoystick.Vertical != 0 && _variableJoystick.Horizontal != 0 && isWizardCasting == false)
             {
                 float targetAngleJoyStick = Mathf.Atan2(joyStickDirection.x, joyStickDirection.z) * Mathf.Rad2Deg;
                 float angleJoyStick = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngleJoyStick, ref _turnSmoothVelocity, _turnSmoothTime);
@@ -41,13 +42,11 @@ public class CharacterMovement : MonoBehaviour
 
                 _joystickDir = Quaternion.Euler(0, targetAngleJoyStick, 0) * Vector3.forward;
 
-                _anim.Play("RunForward");
-
                 _agent.velocity = joyStickDirection * _moveSpeed * Time.fixedDeltaTime;
                 _agent.SetDestination(joyStickDirection + _agent.transform.position);
             }
 
-            else if (horizontal != 0 || vertical != 0)
+            else if (isWizardCasting == false && (horizontal != 0 || vertical != 0))
             {
                 if (direction.magnitude >= 0.1f)
                 {
@@ -64,10 +63,15 @@ public class CharacterMovement : MonoBehaviour
                             _anim.Play("RunForward");
                             break;
                         case "Shooter":
+                            _anim.Play("RunForward");
                             _anim.Play("Shoot.RunForward");
                             break;
                         case "Wizard":
-                            _anim.Play("RunForward");
+                            if(isWizardCasting == false)
+                            {
+                                _anim.Play("RunForward");
+                                _anim.Play("Wizard.RunForward");
+                            }
                             break;
                     }
 
@@ -86,10 +90,12 @@ public class CharacterMovement : MonoBehaviour
                         _anim.Play("Idle");
                         break;
                     case "Shooter":
+                        _anim.Play("Idle");
                         _anim.Play("Shoot.Idle");
                         break;
                     case "Wizard":
                         _anim.Play("Idle");
+                        _anim.Play("Wizard.Idle");
                         break;
                 }
             }

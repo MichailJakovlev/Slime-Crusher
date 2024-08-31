@@ -12,6 +12,7 @@ TagManager:
   - Projectile
   - Speed
   - Damage
+  - Map
   layers:
   - Default
   - TransparentFX

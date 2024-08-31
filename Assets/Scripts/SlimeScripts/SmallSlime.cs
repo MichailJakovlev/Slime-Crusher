@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -22,9 +21,6 @@ public class SmallSlime : MonoBehaviour
     public int _boost;
     public bool _cooldown = false;
     public bool _isDamageTaking = false;
-
-
-
 
     void Start()
     {
@@ -71,7 +67,7 @@ public class SmallSlime : MonoBehaviour
                 {
                     Instantiate(_speedBottle, gameObject.transform.position, Quaternion.identity);
                 }
-                else if (_boost == 15)
+                else if (_boost == 1)
                 {
                     Instantiate(_damageBottle, gameObject.transform.position, Quaternion.identity);
                 }

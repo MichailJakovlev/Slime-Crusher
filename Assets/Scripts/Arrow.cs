@@ -1,4 +1,3 @@
-using Unity.Android.Types;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour
@@ -23,7 +22,7 @@ public class Arrow : MonoBehaviour
             other.gameObject.GetComponent<SmallSlime>().GetHit(_shooter._damageValue);
             Destroy(gameObject);
         }
-        if (other.gameObject)
+        if (other.gameObject.tag == "Map")
         {
             Destroy(gameObject);
         }
