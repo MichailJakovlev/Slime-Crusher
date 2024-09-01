@@ -1924,6 +1924,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: 30, z: 0}
+--- !u!1 &482374434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 482374435}
+  - component: {fileID: 482374436}
+  m_Layer: 5
+  m_Name: SoundButtonContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &482374435
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482374434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9174312, y: 0.9174312, z: 0.9174312}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1839070861}
+  - {fileID: 538051024}
+  m_Father: {fileID: 1241036959}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -185.2572, y: -149.72012}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &482374436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482374434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34990b2100ddda1419f192a468393280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onButtonGameObject: {fileID: 538051023}
+  _offButtonGameObject: {fileID: 1839070860}
+  _audioMixer: {fileID: 24100000, guid: f65651850e926554ca5961290a727531, type: 2}
 --- !u!1001 &486134878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2013,14 +2066,14 @@ RectTransform:
   m_GameObject: {fileID: 538051023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9174312, y: 0.9174312, z: 0.9174312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1241036959}
+  m_Father: {fileID: 482374435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -185.2572, y: -149.72012}
+  m_AnchoredPosition: {x: -50.000137, y: -49.999428}
   m_SizeDelta: {x: 131.05835, y: 129.18494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538051025
@@ -2067,22 +2120,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 538051023}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1839070860}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1188410761}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayUISFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2091,9 +2132,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1188410761}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayUISFX
+      - m_Target: {fileID: 482374436}
+        m_TargetAssemblyTypeName: Sounds, Assembly-CSharp
+        m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5327,6 +5368,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _UISFX: {fileID: 131930975}
   _musicBackground: {fileID: 843927622}
+  _bottleSound: {fileID: 0}
+  _swordSound: {fileID: 0}
+  _bowSound: {fileID: 0}
+  _fireSound: {fileID: 0}
+  _takeDamageSound: {fileID: 0}
+  _newRecordSound: {fileID: 0}
+  _gameOverSound: {fileID: 0}
 --- !u!4 &1203182841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c6e86d7f366dfe642b5ed3dc6793c30c, type: 3}
@@ -5433,8 +5481,7 @@ RectTransform:
   - {fileID: 388137886}
   - {fileID: 122626454}
   - {fileID: 584334171}
-  - {fileID: 1839070861}
-  - {fileID: 538051024}
+  - {fileID: 482374435}
   - {fileID: 830103187}
   m_Father: {fileID: 221885812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6795,14 +6842,14 @@ RectTransform:
   m_GameObject: {fileID: 1839070860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9174312, y: 0.9174312, z: 0.9174312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1241036959}
+  m_Father: {fileID: 482374435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -185.2572, y: -149.72012}
+  m_AnchoredPosition: {x: -50.000137, y: -49.999428}
   m_SizeDelta: {x: 131.05835, y: 129.18494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839070862
@@ -6865,6 +6912,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 482374436}
+        m_TargetAssemblyTypeName: Sounds, Assembly-CSharp
+        m_MethodName: OffButtonPress
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

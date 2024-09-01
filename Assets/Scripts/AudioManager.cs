@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource _bottleSound;
     public AudioSource _swordSound;
     public AudioSource _bowSound;
+    public AudioSource _fireSound;
     public AudioSource _takeDamageSound;
     public AudioSource _newRecordSound;
     public AudioSource _gameOverSound;
@@ -44,6 +45,11 @@ public class AudioManager : MonoBehaviour
     public void BowSound()
     {
         _bowSound.Play();
+    }
+
+    public void FireSound()
+    {
+        _fireSound.Play();
     }
 
     public void TakeDamageSound()

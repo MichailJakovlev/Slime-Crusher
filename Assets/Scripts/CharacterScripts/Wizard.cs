@@ -20,6 +20,8 @@ public class Wizard : MonoBehaviour
     public bool _cooldown = false;
     public float arrowSpeed = 10;
 
+    public AudioManager _audioManager;
+
     void LateUpdate()
     {
         if (Input.GetMouseButton(0) && _cooldown == false)
@@ -33,13 +35,14 @@ public class Wizard : MonoBehaviour
             var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
             arrow.transform.Rotate(90, 0, 0);
             arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
-            
+
             StartCoroutine(CooldownTimer());
-            
+
             _characterAnim.Play("SpellCast");
             _characterAnim.Play("Idle");
             _moveScript.isAttack = true;
             _moveScript.isWizardCasting = true;
+            _audioManager.FireSound();
         }
         else if (Input.GetMouseButton(0) == false)
         {
@@ -52,16 +55,19 @@ public class Wizard : MonoBehaviour
         if (other.gameObject.tag == "Heal")
         {
             _characterHealth.GetHeal(other);
+            _audioManager.TakeBoostSound();
         }
 
         if (other.gameObject.tag == "Speed")
         {
             _characterBoosts.SpeedBoost(other);
+            _audioManager.TakeBoostSound();
         }
 
         if (other.gameObject.tag == "Damage")
         {
             _characterBoosts.DamageBoost(other);
+            _audioManager.TakeBoostSound();
         }
     }
 
@@ -78,4 +84,3 @@ public class Wizard : MonoBehaviour
         _cooldown = false;
     }
 }
-
