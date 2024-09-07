@@ -28,4 +28,9 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+    public void SetPauseMenu()
+    {
+        menu.SetActive(true);
+        Time.timeScale = 0;
+    }
 }
