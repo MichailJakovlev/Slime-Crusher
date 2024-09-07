@@ -54,17 +54,6 @@ public class UIController : MonoBehaviour
         }
     }
 
-    void UIHandler()
-    {
-        if (gameOverMenu.isActiveAndEnabled)
-        {
-            pauseMenu.PauseMenuToggle(false);
-        }
-        else
-        {
-            pauseMenu.PauseMenuToggle(true);
-        }
-    }
 
     void LateUpdate()
     {
@@ -73,7 +62,6 @@ public class UIController : MonoBehaviour
             gameOverMenu.SetGameOver();
             isGame = false;
         }
-        UIHandler();
         ButtonHandler();
     }
 }
