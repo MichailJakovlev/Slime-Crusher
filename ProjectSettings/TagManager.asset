@@ -13,6 +13,7 @@ TagManager:
   - Speed
   - Damage
   - Map
+  - TouchScreen
   layers:
   - Default
   - TransparentFX

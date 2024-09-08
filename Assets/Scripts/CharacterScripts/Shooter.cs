@@ -22,23 +22,47 @@ public class Shooter : MonoBehaviour
 
     public AudioManager _audioManager;
 
+    public VariableJoystick _joystickAttack;
+
+    public GameObject _attackButtonObject;
+    public GameObject _attackJoystickObject;
+
+    void Start()
+    {
+        _attackButtonObject.SetActive(false);
+        _attackJoystickObject.SetActive(true);
+    }
+
     void LateUpdate()
     {
-        if (Input.GetMouseButton(0) && _cooldown == false)
-            {
-                Vector2 center = new Vector2(0.5f, 0.5f);
-                Vector2 mousePosition = Input.mousePosition;
-                mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
-                var angle = Mathf.Atan2(mousePosition.x - center.x, mousePosition.y - center.y) * Mathf.Rad2Deg;
-                _shooter.transform.rotation = Quaternion.Euler(0, angle, 0);
+        Vector3 joyStickDirection = Vector3.forward * _joystickAttack.Vertical + Vector3.right * _joystickAttack.Horizontal;
+        if (Application.isMobilePlatform && _cooldown == false && _joystickAttack.Vertical != 0 && _joystickAttack.Horizontal != 0)
+        {
+            float targetAngleJoyStick = Mathf.Atan2(joyStickDirection.x, joyStickDirection.z) * Mathf.Rad2Deg;
+            _shooter.transform.rotation = Quaternion.Euler(0, targetAngleJoyStick, 0);
 
-                var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
-                arrow.transform.Rotate(90, 0, 0);
-                arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
-                StartCoroutine(CooldownTimer());
-                StartCoroutine(Attack());
-                _audioManager.BowSound();
-            }
+            var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+            arrow.transform.Rotate(90, 0, 0);
+            arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
+            StartCoroutine(CooldownTimer());
+            StartCoroutine(Attack());
+            _audioManager.BowSound();
+        }
+        else if (!Application.isMobilePlatform && Input.GetMouseButton(0) && _cooldown == false)
+        {
+            Vector2 center = new Vector2(0.5f, 0.5f);
+            Vector2 mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
+            var angle = Mathf.Atan2(mousePosition.x - center.x, mousePosition.y - center.y) * Mathf.Rad2Deg;
+            _shooter.transform.rotation = Quaternion.Euler(0, angle, 0);
+
+            var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+            arrow.transform.Rotate(90, 0, 0);
+            arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
+            StartCoroutine(CooldownTimer());
+            StartCoroutine(Attack());
+            _audioManager.BowSound();
+        }
     }
     public void OnTriggerStay(Collider other)
     {

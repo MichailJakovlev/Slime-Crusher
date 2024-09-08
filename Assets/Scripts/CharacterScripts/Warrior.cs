@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Warrior : MonoBehaviour
 {
@@ -17,11 +18,28 @@ public class Warrior : MonoBehaviour
 
     public AudioManager _audioManager;
 
+    public GameObject _attackButtonObject;
+    public GameObject _attackJoystickObject;
+    public ButtonPressed ButtonPressed;
+
+
+    void Start()
+    {
+        _attackButtonObject.SetActive(true);
+        _attackJoystickObject.SetActive(false);
+    }
     public void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Slime")
         {
-            if (Input.GetMouseButton(0) && _cooldown == false)
+            if (!Application.isMobilePlatform && Input.GetMouseButton(0) && _cooldown == false)
+            {
+                other.gameObject.GetComponent<SmallSlime>().GetHit(_damageValue);
+                StartCoroutine(CooldownTimer());
+                StartCoroutine(Attack());
+                _audioManager.SwordSound();
+            }
+            else if(Application.isMobilePlatform && ButtonPressed._buttonPressed == true && _cooldown == false)
             {
                 other.gameObject.GetComponent<SmallSlime>().GetHit(_damageValue);
                 StartCoroutine(CooldownTimer());

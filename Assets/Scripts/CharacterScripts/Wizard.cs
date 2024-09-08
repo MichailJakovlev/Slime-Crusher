@@ -22,32 +22,72 @@ public class Wizard : MonoBehaviour
 
     public AudioManager _audioManager;
 
+    public VariableJoystick _joystickAttack;
+
+    public GameObject _attackButtonObject;
+    public GameObject _attackJoystickObject;
+
+    void Start()
+    {
+        _attackButtonObject.SetActive(true);
+        _attackJoystickObject.SetActive(false);
+    }
+
     void LateUpdate()
     {
-        if (Input.GetMouseButton(0) && _cooldown == false)
+        Vector3 joyStickDirection = Vector3.forward * _joystickAttack.Vertical + Vector3.right * _joystickAttack.Horizontal;
+        if (Application.isMobilePlatform)
         {
-            Vector2 center = new Vector2(0.5f, 0.5f);
-            Vector2 mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
-            var angle = Mathf.Atan2(mousePosition.x - center.x, mousePosition.y - center.y) * Mathf.Rad2Deg;
-            _shooter.transform.rotation = Quaternion.Euler(0, angle, 0);
+            if (_cooldown == false && _joystickAttack.Vertical != 0 && _joystickAttack.Horizontal != 0)
+            {
+                float targetAngleJoyStick = Mathf.Atan2(joyStickDirection.x, joyStickDirection.z) * Mathf.Rad2Deg;
+                _shooter.transform.rotation = Quaternion.Euler(0, targetAngleJoyStick, 0);
 
-            var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
-            arrow.transform.Rotate(90, 0, 0);
-            arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
+                var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+                arrow.transform.Rotate(90, 0, 0);
+                arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
 
-            StartCoroutine(CooldownTimer());
+                StartCoroutine(CooldownTimer());
 
-            _characterAnim.Play("SpellCast");
-            _characterAnim.Play("Idle");
-            _moveScript.isAttack = true;
-            _moveScript.isWizardCasting = true;
-            _audioManager.FireSound();
+                _characterAnim.Play("SpellCast");
+                _characterAnim.Play("Idle");
+                _moveScript.isAttack = true;
+                _moveScript.isWizardCasting = true;
+                _audioManager.FireSound();
+            }
+            if (_joystickAttack.Vertical == 0 && _joystickAttack.Horizontal == 0)
+            {
+                _moveScript.isWizardCasting = false;
+                _moveScript.isAttack = false;
+            }
         }
-        else if (Input.GetMouseButton(0) == false)
+        else if (!Application.isMobilePlatform)
         {
-            _moveScript.isWizardCasting = false;
-            _moveScript.isAttack = false;
+            if (Input.GetMouseButton(0) && _cooldown == false)
+            {
+                Vector2 center = new Vector2(0.5f, 0.5f);
+                Vector2 mousePosition = Input.mousePosition;
+                mousePosition = Camera.main.ScreenToViewportPoint(mousePosition);
+                var angle = Mathf.Atan2(mousePosition.x - center.x, mousePosition.y - center.y) * Mathf.Rad2Deg;
+                _shooter.transform.rotation = Quaternion.Euler(0, angle, 0);
+
+                var arrow = Instantiate(_arrow, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+                arrow.transform.Rotate(90, 0, 0);
+                arrow.GetComponent<Rigidbody>().velocity = arrowSpawnPoint.forward * arrowSpeed;
+
+                StartCoroutine(CooldownTimer());
+
+                _characterAnim.Play("SpellCast");
+                _characterAnim.Play("Idle");
+                _moveScript.isAttack = true;
+                _moveScript.isWizardCasting = true;
+                _audioManager.FireSound();
+            }
+            else if (Input.GetMouseButton(0) == false)
+            {
+                _moveScript.isWizardCasting = false;
+                _moveScript.isAttack = false;
+            }
         }
     }
     public void OnTriggerStay(Collider other)
