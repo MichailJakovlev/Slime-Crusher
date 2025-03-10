@@ -3,12 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slime
+  - CharacterManager
+  - PlayerAnimLayer
+  - SpawnSlimes
+  - Heal
+  - Projectile
+  - Speed
+  - Damage
+  - Map
+  - TouchScreen
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - 
